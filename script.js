@@ -52,7 +52,21 @@ function setTime() {
   hourEl.style.transform = `translate(-50%, -100%) rotate(${scale(
     hoursForClock,
     0,
-    11,
+    12,
+    0,
+    360
+  )}deg)`;
+  minuteEl.style.transform = `translate(-50%, -100%) rotate(${scale(
+    minutes,
+    0,
+    60,
+    0,
+    360
+  )}deg)`;
+  secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(
+    minutes,
+    0,
+    60,
     0,
     360
   )}deg)`;
